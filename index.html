@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>picture puzzle</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">
+ <em class="puzzle"> <u> Picture puzzle</u></em>
+ <h1>You can only drag the pictures to the right place, So think before dragging!</h1>
+        </div>
+
+   <section class="image-wrapper">
+        <img src="./part1.JPG" class="picdrag" draggable="true"  alt="">
+        <img src="./part9.JPG" class="picdrag" draggable="true" alt="">
+        <img src="./part8.JPG" class="picdrag" draggable="true" alt="">
+        <img src="./part4.JPG" class="picdrag" draggable="true" alt="">
+        <img src="./part5.JPG" class="picdrag"  draggable="true" alt="">
+        <img src="./part6.JPG" class="picdrag" draggable="true" alt="">
+        <img src="./part7.JPG" class="picdrag" draggable="true" alt="">
+        <img src="./part3.JPG" class="picdrag" draggable="true" alt="">
+        <img src="./part2.JPG" class="picdrag" draggable="true" alt="">
+    </section> 
+
+    <div class="image-container">
+            <div class="modtager" data-img="part1.JPG"></div>
+            <div class="modtager" data-img="part2.JPG"></div>
+            <div class="modtager hello" data-img="part3.JPG" ></div>
+     </div>
+
+          <div class="image-container">
+            <div class="modtager"  data-img="part4.JPG"></div>
+            <div class="modtager" data-img="part5.JPG"></div>
+            <div class="modtager" data-img="part6.JPG" ></div>
+        </div>
+
+        <div class="image-container">
+            <div class="modtager"  data-img="part7.JPG"></div>
+            <div class="modtager" data-img="part8.JPG"></div>
+            <div class="modtager" data-img="part9.JPG" ></div>
+        </div>
+
+
+    <div class="gifimage" id="gifimage"></div>
+    
+</div>
+
+ <script src="./script.js"></script>  
+</body>
+</html>
