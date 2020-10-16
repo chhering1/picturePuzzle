@@ -3,8 +3,9 @@ let pictures = document.querySelectorAll('.picdrag')
 let containers = document.querySelectorAll('.modtager')
 let counter = 0;
 
+
 containers.forEach(container => {
-  container.addEventListener("dragover", function (ev) {
+  container.addEventListener("touchend", function (ev) {
     ev.preventDefault();
   })
 container.addEventListener('drop', rightPlace, function (ev)  {
@@ -13,8 +14,9 @@ container.addEventListener('drop', rightPlace, function (ev)  {
 })
 
 pictures.forEach(img => {
-  console.log(img)
-  img.addEventListener("dragstart", function (ev) {
+  // console.log(img)
+  img.addEventListener("touchstart", function (ev) {
+    console.log(ev)
     dropElement = ev.target;
   })
 });
